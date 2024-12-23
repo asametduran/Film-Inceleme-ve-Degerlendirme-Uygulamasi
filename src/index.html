@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film İnceleme</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <nav class="bg-gray-800 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-2xl font-bold text-orange-500">Filmİnceleme</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-orange-500 transition-colors">Ana Sayfa</a>
+                    <a href="/discover" class="text-gray-300 hover:text-orange-500 transition-colors">Keşfet</a>
+                    <a href="/profile" class="text-gray-300 hover:text-orange-500 transition-colors">Profil</a>
+                    <a href="/login" class="text-gray-300 hover:text-orange-500 transition-colors">Giriş Yap</a>
+                </div>
+                <button class="md:hidden text-gray-300 hover:text-orange-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="app" class="min-h-[calc(100vh-theme(space.32))]"></main>
+
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>&copy; 2023 Film İnceleme. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
